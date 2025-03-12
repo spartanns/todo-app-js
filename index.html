@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: #0d1117;
+        color: #c9d1d9;
+      }
+      input,
+      button {
+        background-color: #21262d;
+        border: 1px solid #30363d;
+        color: #c9d1d9;
+        padding: 8px;
+      }
+      input {
+        width: 100%;
+        margin-right: 4px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        border: 1px solid #30363d;
+        margin-top: 5px;
+        background-color: #161b22;
+      }
+      .completed {
+        text-decoration: line-through;
+        color: #8b949e;
+      }
+      .main {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+      .input {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .delBtn:hover {
+        background-color: rgba(255, 0, 0, 0.7);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>TODO App</h2>
+    <div class="main">
+      <div class="input">
+        <input type="text" id="taskInput" placeholder="Add a new task" />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
